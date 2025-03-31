@@ -1,33 +1,46 @@
+
+/* top title */
 h1 {
     background-color: gray; 
     text-align: center; 
     padding: 20px; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+/* left and right sections */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aqua;
 }
 
-.images {
-    display: flex;
-    gap: 20px;
-    box-shadow: inset;
-}
-div {
-    text-align: center;
+/* left section with images and parageaph above and below */
+.leftside {
+    width: 60%;
+    background-color: bisque;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-
-caption {
-font-size: 14px;
-color: #555;
- margin-top: 10px;
-padding: 5px;
-display: flex;
-}
-#sidebar {
-    width: 600px;
-    height: 300px;
+/* right section w/ sidebar*/
+.sidebar {
+    width: 40%;
     background-color: lightgray;
-    position: absolute;
-    right: 20px;
-  top: 100px;
- padding: 10px;
+    padding: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* images and captions */
+.images {
+    display: flex;
+    gap: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+    font-size: 14px;
+    margin-top: 5px;
 }
